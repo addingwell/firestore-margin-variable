@@ -8,19 +8,19 @@ This Server-Side GTM variable retrieves product margin data from
 
 **Supports:**
 
--   Custom (non-Shopify) setups\
--   Shopify integrations\
--   Multiple calculation methods\
+-   Custom (non-Shopify) setups
+-   Shopify integrations
+-   Multiple calculation methods
 -   Automatic fallback when data is missing
 
 ------------------------------------------------------------------------
 
 ## How It Works
 
-1.  Reads `items` from event data\
-2.  Fetches product data from Firestore\
-3.  Calculates margin per item\
-4.  Applies fallback if needed\
+1.  Reads `items` from event data
+2.  Fetches product data from Firestore
+3.  Calculates margin per item
+4.  Applies fallback if needed
 5.  Returns total cart margin (rounded to 2 decimals)
 
 ------------------------------------------------------------------------
@@ -60,14 +60,14 @@ This Server-Side GTM variable retrieves product margin data from
 
 ### Required
 
--   **Data Source**: `Other` or `Shopify`\
--   **Shopify ID** (if Shopify selected)\
+-   **Data Source**: `Other` or `Shopify`
+-   **Shopify ID** (if Shopify selected)
 -   **Collection ID** (if not Shopify)
 
 ### Optional
 
--   **GCP Project ID** (otherwise uses `GOOGLE_CLOUD_PROJECT`)\
--   Custom item field names\
+-   **GCP Project ID** (otherwise uses `GOOGLE_CLOUD_PROJECT`)
+-   Custom item field names
 -   Fallback percentage
 
 ------------------------------------------------------------------------
@@ -125,8 +125,8 @@ Field names are configurable in the template.
 
 ## Return Value
 
--   Returned as a **string**\
--   Rounded to **2 decimals**\
+-   Returned as a **string**
+-   Rounded to **2 decimals**
 -   Represents the **total cart margin**
 
 **Example**
@@ -137,7 +137,7 @@ Field names are configurable in the template.
 
 ## Use Cases
 
--   Profit-based bidding\
--   Server-side ecommerce tracking\
--   Margin reporting\
+-   Profit-based bidding
+-   Server-side ecommerce tracking
+-   Margin reporting
 -   Advanced attribution models
