@@ -239,7 +239,7 @@ const getType = require("getType");
 
 const value = getEventData("value");
 const tax = getEventData("tax");
-const discount = getEventData("shipping");
+const shipping = getEventData("shipping");
 const safeShipping = shipping != null ? makeNumber(shipping) : 0;
 
 const haveValueTax = value != null && tax != null;
